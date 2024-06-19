@@ -1,7 +1,3 @@
-Sure! Below is a sample content for a GitHub README file that explains your project.
-
----
-
 # Portfolio Website
 
 This repository contains the source code for a personal portfolio website. The website showcases skills, experiences, projects, and educational background in the field of technology, focusing on web development, app development, and data science.
@@ -66,14 +62,4 @@ To run this project locally, follow these steps:
 - **Contact Form**: Fill out the contact form to send a message. Ensure all fields are completed correctly as per the validation rules.
 - **View Projects**: Check the projects section to see detailed descriptions and links to individual projects.
 
-## Contributing
 
-Contributions are welcome! Please fork this repository and submit pull requests for any improvements or new features. Make sure to follow the established code style and structure.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to modify this README file to better fit your specific project needs and preferences.
