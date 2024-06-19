@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education.html">Academics</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>A dedicated and proactive individual currently pursuing a Bachelor of Technology in Artificial Intelligence and Data Science at KPR Institute Of Engineering And Technologies. Proficient in Python, SQL Database, Excel, MongoDB, Deep learning and Machine Learning with strong problem-solving skills and a creative approach to data analysis. Experienced in machine learning algorithms, statistical analysis, and data visualization techniques. Skilled in supervised and unsupervised learning, neural networks, natural language processing, and deep learning. Familiar with tools like TensorFlow and Scikit-Learn. A self-motivated learner with excellent logical and structured thinking, eager to apply my skills in real-world scenarios. Passionate about coding, exploring nature, and staying updated on the latest developments in data science and machine learning.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>App Development</span><br>Mobile app development</li>
+                            <li><span>Data Science</span><br>Data Scientist </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>FLUTTER INTERN</span><br>Gained experience in Flutter basics, specializing in creating registration and login pages.<br>
+                                Implemented user authentication and basic UI design.<br>
+                               Worked on optimizing app performance and resolving any issues or bugs.<br>
+                               Collaborated with backend developers to integrate APIs and streamline data flow between front-end and back-end systems.</li>
+                            <li><span>ML INTERN</span><br>Utilized Python and key data science libraries such as Pandas, NumPy, and Matplotlib for data manipulation and visualization.<br>
+                                Developed end-to-end machine learning pipelines for applications including natural language processing (NLP), computer vision, and time series analysis.<br>
+                                Applied supervised and unsupervised learning techniques using frameworks like TensorFlow, Keras, and Scikit-Learn.<br>
+                                Enhanced problem-solving skills and business acumen through complex analysis tasks and real-world data challenges.<br>
+                                Created and deployed predictive models to derive actionable business insights.</li>
+                            
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+</body>
+</html>

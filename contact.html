@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9abc4cc60d.js" crossorigin="anonymous"></script>
+    <script src="valid.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education.html">Academics</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title" style="font-size: 60px;">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>12345678</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="contact" onsubmit="formsubmit()" action="javascript:void(0)">
+                        <h1 style="font-size: 60px; text-align: left; padding-bottom: 20px; padding-top: 18px;">Sign Up</h1>
+                        <input type="text" name="Name" placeholder="Your Name">
+                        <input type="text" name="phn" placeholder="Your Phone Number">
+                        <p style="font-size: 20px;"><b>Date of Birth</b></p>
+                        <input type="date" name="dob" placeholder="Your Date of Birth" required min="1950-01-01" max="2019-01-01">
+                        <input type="text" name="nationality" placeholder="Your Nationality">
+                        <input type="text" name="zip" placeholder="Zipcode">
+                        <p style="font-size: 20px;"><b>Oᴄᴄᴜᴘᴀᴛɪᴏɴ</b></label><br><br>
+                        <select id="occupation" name="occupation" style="color: rgba(0, 0, 0, 0.6);">
+                        <option disabled selected value="" >Select Occupation </option>
+                        <option value="student">ꜱᴛᴜᴅᴇɴᴛ</option>
+                        <option value="workingProfessional">ᴡᴏʀᴋɪɴɢ ᴘʀᴏꜰᴇꜱꜱɪᴏɴᴀʟ</option>
+                        <option value="professor">ᴘʀᴏꜰᴇꜱꜱᴏʀ</option>
+                        </select><br>
+                        <input type="email" name="email" placeholder="Your Email">
+                        <input type="password" name="pass" placeholder="Password">
+                        <input type="password" name="repass" placeholder="Confirm Password">
+
+
+                        <!-- Radio button for updates -->
+                        <h3><b>Do you want to receive any updates?</b></h3>
+                        <div class="radio-group" style="display: inline-block; width: 100%;">
+                          <div style="display: inline;"><input  style="width: 10%;" type="radio" name="updates" value="yes"><label for="updates">Yes</label></div>
+                          <div style="display: inline;"><input  style="width: 10%;" type="radio" name="updates" value="no"><label for="updates">No</label></div>
+                      </div>
+                        <!-- <textarea name="Message" rows="6" placeholder="Your Message"></textarea> -->
+                        <button type="button" class="btn btn2" onclick="formsubmit()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>CopyRight</p>
+        </div>
+    </div>
+</body>
+</html>
